@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Serving.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ranamalsingh12/node-js-begginer-programs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ranamalsingh12/node-js-begginer-programs/issues"
+  },
+  "homepage": "https://github.com/Ranamalsingh12/node-js-begginer-programs#readme"
+}
