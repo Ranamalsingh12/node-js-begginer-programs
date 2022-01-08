@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ranamalsingh12/node-js-begginer-programs/issues"
   },
-  "homepage": "https://github.com/Ranamalsingh12/node-js-begginer-programs#readme"
+  "homepage": "https://github.com/Ranamalsingh12/node-js-begginer-programs#readme",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
 }

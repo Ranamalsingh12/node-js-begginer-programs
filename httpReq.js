@@ -14,6 +14,8 @@ const http = require('https')
 // })
 
 //POST method
+
+const axios = require('axios');
 const data = JSON.stringify({
     name:'john doe',
     job:'content writer'
@@ -29,18 +31,26 @@ const options = {
 }
 
 //request
-const req = http.request(options, (res) => {
-    let data='';
-    console.log("Status Code:",res.statusCode);
+// const req = http.request(options, (res) => {
+//     let data='';
+//     console.log("Status Code:",res.statusCode);
 
-    res.on('data',(chunk)=>{
-        data += chunk
-    })
+//     res.on('data',(chunk)=>{
+//         data += chunk
+//     })
 
-    res.on('end',()=>{
-        console.log("Body:", JSON.parse(data));
-    })
+//     res.on('end',()=>{
+//         console.log("Body:", JSON.parse(data));
+//     })
+// })
+
+// req.write(data);
+// req.end();
+
+//POST request using axios library
+axios.post('https://reqres.in/api/users',data).then(res =>{
+    console.log(`Status Code:${res.status}`)
+    console.log(`Body: ${JSON.stringify(res.data)}`);
+}).catch(err => {
+    console.log(err);
 })
-
-req.write(data);
-req.end();
