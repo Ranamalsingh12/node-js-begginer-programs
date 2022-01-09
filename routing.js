@@ -30,4 +30,4 @@ http.createServer(function(req, res){
     // if(req.url=='/about'){
     //     return about(req,res);
     // }
-}).listen(8000);
+}).listen(process.env.PORT || 8000);
